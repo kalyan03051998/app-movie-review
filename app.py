@@ -16,7 +16,7 @@ def hello_world():
     vector= load('app/vector.joblib')
     pred= model.predict(vector.transform([text]))[0]
     if pred == 0:
-      return render_template('hi.html', href='app/static/negative.png')
+      return render_template('hi.html', href='static/negative.png')
     else:
       return render_template('hi.html', href='static/positive.png')
 
